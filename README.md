@@ -1,16 +1,19 @@
                     RPS
 
-Overview
+##Overview
+
     This is my simple javascript game, created to test my
 manipulation and logic strength. its rock, paper and scisssors 
 game.
 
 app deploy .... 
 
-Features
+##Features
+
     Mobile responsive
     
-Runing the project
+##Runing the project
+
     click one of the images(rock, paper or scisssors) to select.If 
 your selction beat computer selction your score will increase by 1
 else computer score will increase or both scores remain unchange if
@@ -21,6 +24,7 @@ if your selction matches.
     -paper beat rock
     
     
-Dependency
+##Dependency
+
     clone the repository and open index.html
 using any browser
