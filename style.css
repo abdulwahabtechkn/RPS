@@ -1,0 +1,108 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.main-container{
+    width: 80%;
+    height: 600px;
+    background: #f4f4f4;
+    margin: auto;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3px;
+    width: 100%;
+    margin: 50px 0px 20px 0px;
+    justify-content: center;
+    text-align: center;
+    color:#0014F4;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.item{
+    width: 100%;
+    height: 100%;
+}
+
+.btn{
+    padding: 1rem 2rem;
+    margin: 10px 1rem;
+    border: 1px solid #88BDDC;
+    background: #2D97D4;
+    color: #fff;
+    border-radius: 20%;
+    display: none;
+}
+
+.scores h3{
+    display: inline-block;
+    margin: 20px 30px;
+    background: linear-gradient(90deg, #E9B5FF, #B101FC);
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.modal{
+    display: none;
+    width: 100%;
+    height: 500px;
+    transition: 1s;
+}
+
+.item-modal{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    background: #444;
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 50px;
+}
+.item-modal img{
+    margin-top: 30px;
+    width: 80%;
+    height: 250px;
+}
+
+@media (max-width: 760px){
+    .main-container{
+        width: 100%;
+    }
+    .modal{
+        position: absolute;
+        top:0;
+        left:-400px;
+        
+        height: 250px;
+        width: 80%;
+        animation-name: pass;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+   .item-modal {
+       margin-top: 4px;
+   }
+   .item-modal img{
+       margin-top: 4px;
+       width: 100%;
+       height: 100px;
+   }
+   .item-modal h2{
+       font-size: 1.5rem;
+   }
+   @keyframes pass{
+       0%{left: -100%}
+       100%{left :0}
+   }
+}
